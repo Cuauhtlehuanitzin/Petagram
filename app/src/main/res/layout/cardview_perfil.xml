@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cvContacto"
+    android:id="@+id/cvPerfil"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -14,9 +14,9 @@
         >
 
         <ImageView
-            android:id="@+id/imgFoto"
+            android:id="@+id/imgFoto2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
             android:src="@drawable/pastor"
             android:scaleType="fitCenter"
             />
@@ -26,28 +26,11 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:padding="4dp"
+
             >
 
-            <ImageView
-                android:id="@+id/imgLikes"
-                android:layout_width="50dp"
-                android:layout_height="26dp"
-                android:src="@drawable/huesito"
-                android:scaleType="centerCrop"
-                />
-
             <TextView
-                android:id="@+id/tvNombreCV"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/pnombre"
-                android:textSize="@dimen/nombre_cardview"
-                android:textStyle="bold"
-                android:paddingLeft="20dp"
-                />
-
-            <TextView
-                android:id="@+id/tvNumLikesCV"
+                android:id="@+id/tvNumLikesCV2"
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:text="@string/plikes"
@@ -55,13 +38,13 @@
                 />
 
             <ImageView
-                android:id="@+id/imgHuesoAmarillo"
+                android:id="@+id/imgHuesoAmarillo2"
                 android:layout_width="25dp"
 
                 android:layout_height="13dp"
                 android:src="@drawable/huesito"
                 android:scaleType="centerCrop"
-                 />
+                />
         </LinearLayout>
 
     </LinearLayout>

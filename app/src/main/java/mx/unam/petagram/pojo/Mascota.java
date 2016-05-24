@@ -1,4 +1,4 @@
-package mx.unam.petagram;
+package mx.unam.petagram.pojo;
 
 /**
  * Created by MAYAS on 16/05/2016.
@@ -13,6 +13,11 @@ public class Mascota {
     public Mascota(int foto, String nombre, String likes) {
         this.foto = foto;
         this.nombre = nombre;
+        this.likes = likes;
+    }
+
+    public Mascota(int foto, String likes) {
+        this.foto = foto;
         this.likes = likes;
     }
 

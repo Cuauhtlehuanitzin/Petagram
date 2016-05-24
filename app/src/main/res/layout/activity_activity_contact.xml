@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pojo.ActivityContact"
+    android:orientation="vertical"
+    >
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar">
+    </include>
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:paddingTop="15dp"
+        android:ems="10"
+        android:id="@+id/etTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destinatario: "
+    />
+
+    <EditText
+        android:ems="10"
+        android:id="@+id/etSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Asunto: "
+        />
+
+    <EditText
+        android:ems="10"
+        android:id="@+id/etTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mensaje: "
+        android:inputType="textPostalAddress"
+        />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:text="Enviar correo"
+        android:onClick="OnClick"
+        />
+
+</LinearLayout>

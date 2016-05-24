@@ -1,7 +1,7 @@
-package mx.unam.petagram;
+package mx.unam.petagram.adapter;
 
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import mx.unam.petagram.R;
+import mx.unam.petagram.pojo.Mascota;
 
 
 /**
@@ -18,7 +21,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
     ArrayList<Mascota> mascotas;
 
-    public MascotaAdaptador(ArrayList<Mascota> mascotas) {
+    public MascotaAdaptador(ArrayList<Mascota> mascotas, FragmentActivity activity) {
         this.mascotas = mascotas;
     }
 

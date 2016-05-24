@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pojo.ActivityAbout">
+
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar">
+    </include>
+
+    <TextView
+        android:id="@+id/tvTituloAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_about"
+        android:textSize="@dimen/titulo_about"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:paddingTop="15dp"
+        />
+    <ImageView
+        android:id="@+id/ivFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/foto1"
+        android:layout_below="@+id/tvTituloAbout"
+        android:layout_centerHorizontal="false"
+        />
+    <TextView
+        android:id="@+id/tvNombreAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_autor"
+        android:layout_below="@+id/ivFoto"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        />
+    <TextView
+        android:id="@+id/tvApellidoAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/appellidos_autor"
+        android:layout_below="@+id/tvNombreAutor"
+
+        />
+    <TextView
+        android:id="@+id/tvProfesionAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profesion_autor"
+        android:layout_below="@+id/tvApellidoAutor"
+        />
+    <TextView
+        android:id="@+id/tvNacionalidadAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nacionalidad_autor"
+        android:layout_below="@+id/tvProfesionAutor"
+        />
+
+</RelativeLayout>

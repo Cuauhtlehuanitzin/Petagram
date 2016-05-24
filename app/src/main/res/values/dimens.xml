@@ -6,4 +6,5 @@
     <dimen name="numero_likes">20dp</dimen>
     <dimen name="corner_radius_cardview">4dp</dimen>
     <dimen name="elevacion_actionbar">4dp</dimen>
+    <dimen name="titulo_about">24dp</dimen>
 </resources>
