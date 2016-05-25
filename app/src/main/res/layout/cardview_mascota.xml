@@ -17,7 +17,7 @@
             android:id="@+id/imgFoto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/pastor"
+            android:src="@drawable/puppy1"
             android:scaleType="fitCenter"
             />
 

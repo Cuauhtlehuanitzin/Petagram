@@ -6,57 +6,57 @@
     tools:context=".pojo.ActivityAbout">
 
 
-    <include android:id="@+id/miActionBar"
-        layout="@layout/actionbar">
-    </include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvTituloAbout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/titulo_about"
-        android:textSize="@dimen/titulo_about"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"
-        android:paddingTop="15dp"
-        />
-    <ImageView
-        android:id="@+id/ivFoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/foto1"
-        android:layout_below="@+id/tvTituloAbout"
-        android:layout_centerHorizontal="false"
-        />
-    <TextView
-        android:id="@+id/tvNombreAutor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/nombre_autor"
-        android:layout_below="@+id/ivFoto"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        />
-    <TextView
-        android:id="@+id/tvApellidoAutor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/appellidos_autor"
-        android:layout_below="@+id/tvNombreAutor"
+        <include android:id="@+id/miActionBar"
+            layout="@layout/actionbar">
+        </include>
 
-        />
-    <TextView
-        android:id="@+id/tvProfesionAutor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/profesion_autor"
-        android:layout_below="@+id/tvApellidoAutor"
-        />
-    <TextView
-        android:id="@+id/tvNacionalidadAutor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/nacionalidad_autor"
-        android:layout_below="@+id/tvProfesionAutor"
-        />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivFoto"
+            android:layout_below="@+id/tvTituloAbout"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/foto1"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            android:layout_gravity="center"
+             />
+
+        <TextView
+            android:id="@+id/tvNombreAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_autor"
+            android:layout_below="@+id/ivFoto"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tvProfesionAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profesion_autor"
+            android:layout_below="@+id/tvApellidoAutor"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tvNacionalidadAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nacionalidad_autor"
+            android:layout_below="@+id/tvProfesionAutor"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
 
 </RelativeLayout>
