@@ -51,11 +51,15 @@ public class RecyclerViewFragment extends Fragment {
 
     public void inicializarDatos() {
         mascotas = new ArrayList<Mascota>();
-        mascotas.add(new Mascota(R.drawable.pastor, "Huitzi", "9"));
-        mascotas.add(new Mascota(R.drawable.bulldog, "Miztli", "7"));
-        mascotas.add(new Mascota(R.drawable.chihuahua, "Grandote", "2"));
-        mascotas.add(new Mascota(R.drawable.xolo, "Itzcuintli", "10"));
-        mascotas.add(new Mascota(R.drawable.salchicha, "Hot dog", "4"));
+        mascotas.add(new Mascota(R.drawable.puppy1, "Puppy 1", "9"));
+        mascotas.add(new Mascota(R.drawable.puppy2, "Puppy 2", "7"));
+        mascotas.add(new Mascota(R.drawable.puppy3, "Puppy 3", "2"));
+        mascotas.add(new Mascota(R.drawable.puppy4, "Puppy 4", "10"));
+        mascotas.add(new Mascota(R.drawable.puppy5, "Puppy 5", "4"));
+        mascotas.add(new Mascota(R.drawable.puppy6, "Puppy 6", "5"));
+        mascotas.add(new Mascota(R.drawable.puppy7, "Puppy 7", "6"));
+        mascotas.add(new Mascota(R.drawable.puppy8, "Puppy 8", "7"));
+        mascotas.add(new Mascota(R.drawable.puppy9, "Puppy 9", "8"));
 
     }
 
