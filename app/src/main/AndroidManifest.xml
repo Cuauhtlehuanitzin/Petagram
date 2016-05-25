@@ -24,8 +24,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".pojo.MainActivity" />
         </activity>
-        <activity android:name=".pojo.ActivityAbout" />
-        <activity android:name=".pojo.ActivityContact"></activity>
+
+        <activity android:name=".pojo.ActivityAbout"
+            android:parentActivityName=".pojo.MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pojo.MainActivity" />
+        </activity>
+
+        <activity android:name=".pojo.ActivityContact"
+            android:parentActivityName=".pojo.MainActivity"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pojo.MainActivity" />
+        </activity>
+
     </application>
 
 </manifest>
