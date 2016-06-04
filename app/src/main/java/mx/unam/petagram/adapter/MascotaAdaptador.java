@@ -13,7 +13,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import mx.unam.petagram.R;
-import mx.unam.petagram.pojo.Mascota;
+import mx.unam.petagram.model.ConstructorMascota;
+import mx.unam.petagram.model.Mascota;
 
 
 /**
@@ -24,9 +25,9 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     ArrayList<Mascota> mascotas;
     Activity activity;
 
-    public MascotaAdaptador(ArrayList<Mascota> mascotas, FragmentActivity activity) {
+    public MascotaAdaptador(ArrayList<Mascota> mascotas) {
         this.mascotas = mascotas;
-        this.activity = activity;
+
     }
 
 
@@ -43,13 +44,20 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         final Mascota mascota = mascotas.get(position);
         MascotaViewHolder.imgFoto.setImageResource(mascota.getFoto()); //Foto del objeto actual
         MascotaViewHolder.tvNombreCV.setText(mascota.getNombre());
-        MascotaViewHolder.tvLikesCV.setText(mascota.getLikes());
+        MascotaViewHolder.tvLikesCV.setText(String.valueOf(mascota.getLikes()));
 
         MascotaViewHolder.btnLike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(activity, "Diste like a " + mascota.getNombre(),Toast.LENGTH_SHORT).show();
-                MascotaViewHolder.tvLikesCV.setText("22");
+                //MascotaViewHolder.tvLikesCV.setText(String.valueOf(mascota.getLikes() + 1));
+
+                //Inserta el registro en la tabla de likes en la BD
+                ConstructorMascota constructorMascota = new ConstructorMascota(activity);
+                constructorMascota.darLikeMascota(mascota);
+
+                MascotaViewHolder.tvLikesCV.setText(constructorMascota.obtenerLikesMascota(mascota) + "");
+
             }
         });
 

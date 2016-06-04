@@ -6,8 +6,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,11 +13,10 @@ import android.view.MenuItem;
 
 import java.util.ArrayList;
 
-import mx.unam.petagram.adapter.MascotaAdaptador;
 import mx.unam.petagram.R;
 import mx.unam.petagram.adapter.PageAdapter;
-import mx.unam.petagram.fragment.PerfilFragment;
-import mx.unam.petagram.fragment.RecyclerViewFragment;
+import mx.unam.petagram.vista.fragment.PerfilFragment;
+import mx.unam.petagram.vista.fragment.RecyclerViewFragment;
 
 public class MainActivity extends AppCompatActivity {
 
